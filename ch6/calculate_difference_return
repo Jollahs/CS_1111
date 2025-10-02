@@ -1,0 +1,11 @@
+def calculate_difference(a, b):
+    """Calculate the absolute
+        value of the difference between a and b."""
+    return abs(a-b)
+
+
+print(calculate_difference(5, 6))
+difference = calculate_difference(3, 6)
+difference = (calculate_difference(-9, 10))
+print(difference)
+
