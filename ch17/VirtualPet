@@ -1,0 +1,21 @@
+class VirtualPet:
+    def __init__(self, name):
+        self.name = name
+        self.hunger_level = 0
+
+    def exercise(self, time):
+        self.hunger_level += time
+
+    def feed(self, amount):
+        self.hunger_level -= amount
+
+    def __str__(self):
+        return "Name: " + self.name + "\nHunger level: " + str(self.hunger_level)
+
+pet1 = VirtualPet("Pax")
+
+pet1.exercise(10)
+
+pet1.feed(10)
+
+print(pet1)
